@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:grid_view_practrice/homepage.dart';
-import 'package:grid_view_practrice/slider_screen.dart';
-import 'package:grid_view_practrice/switch_screen.dart';
+import 'package:grid_view_practrice/view/local%20stroge/add_or_edit_screen.dart';
+import 'package:grid_view_practrice/view/local%20stroge/home_screen.dart';
+import 'package:grid_view_practrice/view/widget%20practrice/switch_screen.dart';
+
 // import 'package:grid_view_practrice/switch_screen.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.dark
       ),
       themeMode:_themeMode,
-      home: SliderScreen(),
+      home: HomeScreen(),
     );
   }
 }
