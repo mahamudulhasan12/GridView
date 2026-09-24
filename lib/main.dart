@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_switch/flutter_switch.dart';
-import 'package:grid_view_practrice/view/local%20stroge/add_or_edit_screen.dart';
-import 'package:grid_view_practrice/view/local%20stroge/home_screen.dart';
-import 'package:grid_view_practrice/view/widget%20practrice/switch_screen.dart';
+import 'package:grid_view_practrice/view/getx/get_homepage.dart';
 
-// import 'package:grid_view_practrice/switch_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,12 +14,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  ThemeMode _themeMode =ThemeMode.light;
-  void _toggleTheme(){
-    setState(() {
-      _themeMode =_themeMode ==ThemeMode.light ?ThemeMode.dark :ThemeMode.light ;
-    });
-  }
+  // ThemeMode _themeMode =ThemeMode.light;
+  // // void _toggleTheme(){
+  // //   setState(() {
+  // //     _themeMode =_themeMode ==ThemeMode.light ?ThemeMode.dark :ThemeMode.light ;
+  // //   });
+  // // }
   @override
 
   Widget build(BuildContext context) {
@@ -35,8 +31,8 @@ class _MyAppState extends State<MyApp> {
       darkTheme: ThemeData(
         brightness: Brightness.dark
       ),
-      themeMode:_themeMode,
-      home: HomeScreen(),
+      // themeMode:_themeMode,
+      home: GetHomepage(),
     );
   }
 }
